@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingTop="@android:dimen/app_icon_size"
+    android:background="@drawable/schoolbuilding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StudiSpace"
+        android:textColor="@color/colorAccent"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:paddingTop="@android:dimen/app_icon_size"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="UserName"
+        android:id="@+id/loginuser"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/loginpassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@android:color/transparent"
+        android:id="@+id/login"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:backgroundTint="@android:color/transparent"
+        android:id="@+id/createacct"/>
+
+
+</LinearLayout>

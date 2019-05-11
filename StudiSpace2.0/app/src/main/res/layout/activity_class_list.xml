@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:background="@drawable/notebook"
+    tools:context=".ClassList">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classes"
+        android:textColor="@color/colorAccent"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:id="@+id/classes"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class0"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="class0Click"
+        android:background="@color/white"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class1"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="class1Click"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class2"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="class2Click"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="class3Click"
+        android:id="@+id/class3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Class"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:id="@+id/findclass"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>

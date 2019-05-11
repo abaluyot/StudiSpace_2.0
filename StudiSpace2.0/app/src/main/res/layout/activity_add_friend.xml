@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/notebook"
+    tools:context=".AddFriend">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Friends"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/friendUname"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:hint="Add friend by username:"/>
+
+    <Button
+        android:id="@+id/addfriendbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_height="wrap_content"
+        android:text="Find"/>
+
+
+</LinearLayout>

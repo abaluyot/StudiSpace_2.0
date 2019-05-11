@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/notebook"
+    tools:context=".CreateProfile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:text="Create Profile"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:hint="First Name"
+        android:layout_gravity="center"
+        android:id="@+id/fname"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:hint="Last Name"
+        android:layout_gravity="center"
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:hint="Username"
+        android:layout_gravity="center"
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        />
+
+    <EditText
+        android:hint="Email Address"
+        android:layout_gravity="center"
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/pass"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/passverify"
+        android:text=""
+        android:hint="Verify Password"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:onClick="radioClick"
+            android:id="@+id/isStudent"
+            android:textColor="@color/colorPrimary"/>
+        <RadioButton
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructor"
+            android:id="@+id/isInstructor"
+            android:onClick="radioClick"
+            android:textColor="@color/colorPrimary"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Enter"
+        android:id="@+id/enter"/>
+
+</LinearLayout>

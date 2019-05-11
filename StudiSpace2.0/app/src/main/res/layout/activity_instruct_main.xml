@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingTop="@android:dimen/app_icon_size"
+    android:orientation="vertical"
+    android:background="@drawable/chalkboard"
+    tools:context=".InstructMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/ihome"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/home"
+        android:layout_gravity="center"
+        android:paddingTop="@android:dimen/app_icon_size">
+
+
+        <Button
+            android:id="@+id/iprofile"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Profile"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            />
+
+
+        <Button
+            android:id="@+id/iclasses"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Classes"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            />
+
+
+        <Button
+            android:id="@+id/iFriends"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Friends"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/imessages"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Messages"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Add Class"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false" />
+
+    </GridLayout>
+
+</LinearLayout>

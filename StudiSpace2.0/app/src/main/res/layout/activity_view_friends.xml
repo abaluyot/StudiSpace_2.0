@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@android:dimen/app_icon_size"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".ViewFriends">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friends"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/friends"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:id="@+id/friend1pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:clickable="true"
+            android:onClick="friend1profile"
+            android:src="@drawable/defaultuserpic"
+            android:textColor="@color/colorPrimary"
+           />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/friend2pic"
+            android:clickable="true"
+            android:onClick="friend2profile"
+            android:src="@drawable/defaultuserpic"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:clickable="true"
+            android:onClick="friend3profile"
+            android:id="@+id/friend3pic"
+            android:src="@drawable/defaultuserpic"
+            android:textColor="@color/colorPrimary"
+           />
+
+
+
+
+</LinearLayout>

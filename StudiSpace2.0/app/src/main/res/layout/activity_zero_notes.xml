@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/absoluteLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ZeroNotes">
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="72dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:baselineAligned="false"
+        android:elevation="0dp"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="51dp"
+        tools:layout_conversion_absoluteWidth="66dp" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="226dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:text="Class Notes"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="137dp"
+        tools:layout_conversion_absoluteWidth="185dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Notes Added"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_conversion_absoluteWidth="176dp"
+        tools:layout_editor_absoluteY="146dp"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="300dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="341dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp"
+        app:layout_constraintGuide_end="30dp"
+        app:layout_constraintGuide_percent="30" />
+
+    <android.support.constraint.Constraints
+        android:id="@+id/constraints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
